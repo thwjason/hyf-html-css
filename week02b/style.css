@@ -1,0 +1,176 @@
+/* ===== FONTS GENERAL =====*/
+h1 {
+    font-size: 3.5em;
+    font-family: "Helvetica", serif;
+    width: 30%;
+    margin-left: 35%;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-family: "Helvetica", serif;
+    width: 20%;
+    margin-left: 40%;
+}
+
+h1,
+h2 {
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 1%;
+}
+
+h3 {
+    font-size: 1.4em;
+    font-family: "Helvetica", serif;
+}
+
+p {font-family: "Helvetica", serif;}
+
+p:hover {font-size: 1.2em;}
+
+/*===== GENERAL SETTINGS ====*/ 
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    padding: 0.5%;
+}
+
+section {margin-bottom: 3%;}
+
+.grid-item {
+    list-style: none;
+    border-radius: 5%;
+    width: 22%;
+    height: 500px;
+    margin: 0.5%;
+    padding: 0.5%;
+    overflow: hidden;
+}
+
+img {width: 80%;}
+
+li {opacity: 0.9;} 
+
+li:hover {opacity: 1;}
+
+/*=====FLOATS=====*/
+
+#grid-floats .grid-item {float: left;}
+
+/*===== GRID-FLEX ===== */
+#grid-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+#grid-flex .grid-item {
+    margin-bottom: 14px;
+}
+
+/* ===== FIRST ITEMS (to keep them in place(?)===== */
+.grid-item:nth-child(1) {width: 46%;}
+
+.grid-item:nth-child(1) img {width: 60%;}
+
+/* ===== TELEPHONE SETTINGS ===== */
+@media only screen and 
+(max-width: 719px) {
+
+    .grid-item:nth-child(1) {width: 96%;}
+
+    .grid-item:nth-child(1) img {width: 45%;}
+
+    
+
+    .grid-item {
+        width: 46%;
+        height: 250px;
+        margin: 1%;
+        margin-bottom: 10px;
+        flex-grow: 2;
+    }
+
+    .grid-item img {
+        width: 50%;
+        flex-grow: 2;
+    }
+
+
+    h1{font-size: 2em}
+
+    h2 {font-size: 1.5em;}
+
+    h3 {font-size: 1em;}
+
+    p {
+        font-size: 0.8em;
+        width: 100%;
+        height: 100px;
+        overflow: scroll;
+        overflow-x: hidden;
+        color: mediumaquamarine;
+    }
+
+    p:hover {font-size: 0.8em;}
+}
+
+/* ===== tablet settings ===== */
+@media only screen and 
+(min-width: 720px) and (max-width:1079px) {
+
+    .grid-item:nth-child(-n+2) {width: 45%;}
+
+    .grid-item {
+        width: 29%;
+        height: 350px;
+        margin: 1%;
+        flex-shrink: 2;
+    }
+
+    img {
+        width: 50%;
+        flex-shrink: 2;
+    }
+
+    h1{font-size: 2.5em;}
+    
+    h2 {font-size: 2em;}
+
+    h3 {font-size: 1em;}
+
+    p {font-size: 0.8em; color: magenta;}
+
+    p:hover {font-size: 0.9em; }
+}
+
+/* ====== @keyframes ===== */
+.grid-item:nth-child(2n+1) {
+    animation-name: example;
+    animation-delay: 0;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.grid-item:nth-child(2n) {
+    animation-name: example;
+    animation-delay: 2s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    25% {background-color: blue;}
+    50% {box-shadow: 1px 5px 5px 4px #02060a;}
+    75% {background-color: yellowgreen;}
+    100% {box-shadow: 1px 4px 4px 3px #6e6d6e;}
+}
