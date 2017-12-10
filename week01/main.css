@@ -1,0 +1,65 @@
+
+body {
+    font-family: "Helvetica", serif;
+    border: 4px solid #024ba3;
+    padding: 8px;
+    position: relative;
+    top: 0; left: 0; bottom: 0; right: 0;
+    text-align: justify;
+    background-color: #E3DAC9;
+}
+
+header {
+    font-size: 20px;
+    text-align: center;
+}
+
+img {
+    width: 240px;
+    text-align: center;
+}
+
+h2, h3, h4, h5 {
+    text-decoration: underline;
+}
+.introduction {
+   text-align: center;
+}
+
+.legal {
+    line-height: 20px;
+}
+.law-table, .law-table tr, .law-table th, .law-table td {
+    margin: auto;
+    border: 1px solid rgb(12, 2, 104);
+    border-collapse: collapse;
+    text-align: justify;
+    vertical-align: top;
+    table-layout: fixed;
+}
+
+.law-table {
+    padding left: auto;
+    padding right: auto;
+    width: 75%;
+}
+
+.military-table, .military-table tr, .military-table th, .military-table td   {
+    margin: auto;
+    border: 1px solid rgb(12, 2, 104);
+    border-collapse: collapse;
+    text-align: justify;
+    vertical-align: top;
+}
+
+.military-table {
+    padding left: auto;
+    padding right: auto;
+    width: 75%;
+}
+
+#parts-id {
+    text-align: center;
+}
+
+
