@@ -1,0 +1,149 @@
+/* =====  1.  default styles (mobile first) =====  */
+.disclaimer {
+    position: sticky;
+    background-color: red;
+    color: white;
+}
+
+.headerItems{
+    position: absolute;
+    background: rgb(255, 255, 255); 
+    left: 10%;
+    top: 30%;
+    list-style: none;
+    padding-right: 30px;
+  } 
+
+.headerImage{
+    position: relative;
+    width: 100%;
+    background-size: contain;
+    background-position: center right;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.government {text-align: center;}
+
+.navbar {
+  padding: 2%;
+  background-color: rgb(19, 19, 226);
+  color: white; 
+}
+    /*===1a. GRID-FLEX===*/
+
+    #grid-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    
+    #grid-flex #flex2 .flex-item {
+        margin-bottom: 14px;
+        display: block;
+        width: 96%;
+        overflow: hidden;
+    }    
+
+    main {
+        display: flex;
+        padding: 0.5%;
+        background-color: grey;
+    }
+
+    section {margin-bottom: 3%;}
+  
+    .flex-item {
+        list-style: none;
+        width: auto;
+        margin: 0.5%;
+        padding: 0.5%;
+        overflow: hidden;
+    }
+    
+    .flex-image {
+        display: grid;
+        float: left;
+
+        width: 90%;
+    }
+    p {
+        width: auto;
+        height: auto;
+        color: black;
+    }
+
+    ul {list-style: none;}
+  
+
+}
+/* ===== 2. TABLET SETTINGS ===== */
+@media screen and (min-width:480px)
+(max-width: 1079px) {
+
+    main {
+      display: flex;
+      padding: 0.5%;
+      font-size: 1.2em;
+      background-color: grey;
+    }
+  
+    .flex-item {
+        width: 45%;
+        list-style: none;
+        margin: 0.5%;
+        padding: 0.5%;
+        overflow: hidden;
+    }
+  
+    p {
+      width: auto;
+      height: auto;
+      color: black;
+    }
+
+    ul {list-style: none;}
+ 
+    .flex-image {
+        list-style: none;
+        display: flex;
+        flex-wrap: nowrap;
+        width: 30%;
+    }
+}
+
+/* ===== 3. Screen SETTINGS ===== */
+@media screen and (min-width:1080px) {
+    
+
+    main {
+        display: flex;
+        padding: 0.5%;
+        font-size: 1.2em;
+        background-color: grey;
+      }
+    
+    .flex-item {
+          width: 22%;
+          list-style: none;
+          margin: 0.5%;
+          padding: 0.5%;
+          overflow: hidden;
+    }
+    
+    p {
+        width: auto;
+        height: auto;
+        color: black;
+      }
+  
+      ul {list-style: none;}
+   
+      .flex-image {
+          list-style: none;
+          display: flex;
+          flex-wrap: nowrap;
+          width: 30%;
+      }
+  }
+
